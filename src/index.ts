@@ -151,3 +151,42 @@ const oyshi = (id: StringOrNumber, human: Human) => {
 };
 
 oyshi(2, { name: "Raisha Farzana Oyshi", age: 25, isMarried: true });
+
+
+
+
+
+
+
+// class
+
+// amra chaile class er moddhe type declear korte pari.
+
+class Player {
+    name: string;
+    age: number;
+    isMarried: boolean;
+
+    constructor(name: string, age: number, isMarried: boolean) {
+        this.name = name;
+        this.age = age;
+        this.isMarried = isMarried;
+    }
+
+    play() {
+        console.log(`${this.name} is playing.`);
+    }
+}
+
+const tanvirAhmed = new Player("Tanvir Ahmed", 28, true);
+const raishaOyshi = new Player("Raisha Farzana Oyshi", 25, true);
+
+console.log(tanvirAhmed);
+console.log(raishaOyshi);
+
+const players: Player[] = [];
+
+players.push(tanvirAhmed);
+players.push(raishaOyshi);
+
+console.log(players);

@@ -62,4 +62,22 @@ const oyshi = (id, human) => {
     console.log(`My id is ${id}. My name is ${human.name}. I am ${human.age} years old. Am I married? ${human.isMarried}`);
 };
 oyshi(2, { name: "Raisha Farzana Oyshi", age: 25, isMarried: true });
+class Player {
+    constructor(name, age, isMarried) {
+        this.name = name;
+        this.age = age;
+        this.isMarried = isMarried;
+    }
+    play() {
+        console.log(`${this.name} is playing.`);
+    }
+}
+const tanvirAhmed = new Player("Tanvir Ahmed", 28, true);
+const raishaOyshi = new Player("Raisha Farzana Oyshi", 25, true);
+console.log(tanvirAhmed);
+console.log(raishaOyshi);
+const players = [];
+players.push(tanvirAhmed);
+players.push(raishaOyshi);
+console.log(players);
 //# sourceMappingURL=index.js.map
