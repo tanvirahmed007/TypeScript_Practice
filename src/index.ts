@@ -95,3 +95,59 @@ y = 28;
 
 console.log(x);
 console.log(y);
+
+
+
+
+
+
+// function
+// amra chaile function er parameter gula type declear korte pari. amra function er parameter gula type declear kore jekono type r value pass korte pari. ekhane function normal js r function er motoi kaj kore.
+
+const sum = () => {
+    return 2 + 3;
+}
+
+console.log("sum = ",sum());
+
+// amra chaile Function type declear koreo krte pari.
+
+let sum2: Function; // ekhane amra Function type declear korechi. so amra Function type r value pass korte pari. jokhoni amra evabe alada krbo tokhon let diye declear korte hobe. 
+
+sum2 = () => {
+    return 3 + 3;
+}
+
+console.log("sum2 = ",sum2());
+
+// amra chaile function er parameter gula type declear korte pari.
+
+const sum3 = (a: number, b: number) => {
+    return a + b;
+}
+
+console.log("sum3 = ",sum3(2, 3));
+
+
+
+// alias type.
+// alias type r maddhome amra nijeder moto type declear korte pari. amra alias type use korte chaile amra type keyword use korte pari.
+
+const tanvir = (
+    name: string,
+    age: number | string,
+    isMarried: boolean
+) => {
+    console.log(`My name is ${name}. I am ${age} years old. Am I married? ${isMarried}`); // ekhane amra function r parameter gula type declear korechi. so amra jekono type r value pass korte pari. but jinish ta onk confusing so amra alias type use korte pari.
+}
+
+
+// amra alias type use korte chaile amra type keyword use korte pari.
+type StringOrNumber = string | number;
+type Human = { name: string, age: StringOrNumber, isMarried: boolean };
+
+const oyshi = (id: StringOrNumber, human: Human) => {
+    console.log(`My id is ${id}. My name is ${human.name}. I am ${human.age} years old. Am I married? ${human.isMarried}`);
+};
+
+oyshi(2, { name: "Raisha Farzana Oyshi", age: 25, isMarried: true });

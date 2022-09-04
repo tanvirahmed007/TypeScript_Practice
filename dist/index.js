@@ -42,4 +42,24 @@ y = true;
 y = 28;
 console.log(x);
 console.log(y);
+const sum = () => {
+    return 2 + 3;
+};
+console.log("sum = ", sum());
+let sum2;
+sum2 = () => {
+    return 3 + 3;
+};
+console.log("sum2 = ", sum2());
+const sum3 = (a, b) => {
+    return a + b;
+};
+console.log("sum3 = ", sum3(2, 3));
+const tanvir = (name, age, isMarried) => {
+    console.log(`My name is ${name}. I am ${age} years old. Am I married? ${isMarried}`);
+};
+const oyshi = (id, human) => {
+    console.log(`My id is ${id}. My name is ${human.name}. I am ${human.age} years old. Am I married? ${human.isMarried}`);
+};
+oyshi(2, { name: "Raisha Farzana Oyshi", age: 25, isMarried: true });
 //# sourceMappingURL=index.js.map
