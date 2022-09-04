@@ -34,4 +34,12 @@ newArray.push("Tanvir");
 newArray.push(28);
 newArray.push(true);
 console.log(newArray);
+let x;
+let y;
+x = 28;
+x = "Tanvir";
+y = true;
+y = 28;
+console.log(x);
+console.log(y);
 //# sourceMappingURL=index.js.map
